@@ -1,3 +1,5 @@
+// Takes quiet a long time: The answer is: 76576500
+
 public class Highly_Divisible_Triangular_Number {
     public static void main(String[] args){
         int kandidat = 0, anzahl, zaehler = 1;
@@ -12,5 +14,4 @@ public class Highly_Divisible_Triangular_Number {
         }while (anzahl < 500);
         System.out.println(kandidat);
     }
-
 }
