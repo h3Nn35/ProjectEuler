@@ -20,6 +20,8 @@ public class prime {
     }
 
     public Boolean istPrimzahl(long zahl) {
+        if (zahl == 4)
+            return false;
         for (long i = 2; i < zahl / 2; i++)
             if (zahl % i == 0)
                 return false;
