@@ -1,6 +1,3 @@
-import math
-from unittest import result
-
 def fak(n):
 	if n == 0:
 		return True
@@ -10,8 +7,7 @@ def fak(n):
 
 result = 0
 fakultaet = str(fak(100))
-digits = len(fakultaet)
-for i in range(digits):
-    result = result + int(fakultaet[i])
+for i in range(len(fakultaet)):
+    result += int(fakultaet[i])
 
 print(result)
