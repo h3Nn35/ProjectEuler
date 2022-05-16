@@ -21,5 +21,3 @@ def amicable_numbers(eingabe):
         ergebnis += numbers[a]
 
     return ergebnis
-
-print(amicable_numbers(20000))
