@@ -1,13 +1,12 @@
 #include <iostream>
 #include <cmath>
-#include <algorithm>
 
 using namespace std;
 
 bool isPermutation(int _original, int _zahl){
     int ziffern[10];
     string original = to_string(_original), zahl = to_string(_zahl), eins, zwei;
-    int laengezahl = zahl.length(), laengeoriginal = original.length(), summe, anzahl, i, j;
+    int laengezahl = (int) zahl.length(), laengeoriginal = (int) original.length(), anzahl, i, j;
     if (laengezahl != laengeoriginal)
         return false;
 
