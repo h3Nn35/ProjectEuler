@@ -1,6 +1,5 @@
 #include <iostream>
 #include "mathefunktionen.cpp"
-//test
 
 int main() {
     int kandidat = 10, summe = 0, anzahl = 0;
