@@ -70,7 +70,7 @@ int main(){
                 for (x = j + 1; x < anzahl; x++){
                     if (isPermutation(primzahlen[j], primzahlen[x]) &&
                         primzahlen[j] - primzahlen[i] == primzahlen[x] - primzahlen[j])
-                            cout << primzahlen[i] << "." << primzahlen[j] << "." << primzahlen[x] << endl;
+                            cout << primzahlen[i] << primzahlen[j] << primzahlen[x] << endl;
                 }
             }
         }
