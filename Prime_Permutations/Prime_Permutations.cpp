@@ -64,12 +64,13 @@ int main(){
     }
     for (int i = 0; i < anzahl; i++){
         for (int j = i + 1; j < anzahl; j++){
+            if (primzahlen[i] == 1487) // this was the example
+            { continue; }
             if (isPermutation(primzahlen[i], primzahlen[j])){
                 for (x = j + 1; x < anzahl; x++){
-                    if (isPermutation(primzahlen[j], primzahlen[x])){
-                        if (primzahlen[j] - primzahlen[i] == primzahlen[x] - primzahlen[j])
+                    if (isPermutation(primzahlen[j], primzahlen[x]) &&
+                        primzahlen[j] - primzahlen[i] == primzahlen[x] - primzahlen[j])
                             cout << primzahlen[i] << "." << primzahlen[j] << "." << primzahlen[x] << endl;
-                    }
                 }
             }
         }
