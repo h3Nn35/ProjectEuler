@@ -52,7 +52,6 @@ int main(){
         if (istPrimzahl(a))
             anzahlprimes++;
     }
-    //int anzahl = 1061, x = 0;
     int anzahl = anzahlprimes, x = 0;
     int primzahlen[anzahl];
     for (int i = 1001; i < 10000; i++) {
