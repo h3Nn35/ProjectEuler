@@ -1,3 +1,4 @@
+#include "Timer.h"
 #include <iostream>
 #include <cmath>
 
@@ -33,17 +34,19 @@ bool istPrimzahl(int zahl){
 
 
 int main(){
+    Timer t1;
+    t1.start();
     int biggest;
     for (int i = 987654321; i > 999999; i -= 2){
         if (istPandigital(i)) {
+            biggest = i;
             cout << i << "\r";
             cout.flush();
-            biggest = i;
             if (istPrimzahl(i))
                 break;
         }
     }
-    cout << biggest;
-
+    t1.stop();
+    cout << "Answer: " << biggest << endl << "Found in " << t1.getSeconds() << " seconds." << endl;
     return EXIT_SUCCESS;
 }
