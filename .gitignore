@@ -200,9 +200,11 @@ $RECYCLE.BIN/
 
 
 ### Visual Studio Code
-.vscode/*
+*/.vscode/*
 .history/
 *.vsix
+*.plist
+*/*.dSYM/**
 
 
 
