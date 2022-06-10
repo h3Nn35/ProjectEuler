@@ -11,7 +11,6 @@ for i in range(12, 28123, 1):
         abundant.append(i)
 
 laenge = len(abundant)
-print(laenge)
 
 for a in range(0, laenge - 1, 1):
     if abundant[a] > 14100:
