@@ -19,9 +19,7 @@ for a in range(0, laenge - 1, 1):
     for b in range(a, laenge - 1, 1):
         i = abundant[a] + abundant[b]
         if i > 28123:
-            print("break " + str(a))
             break
-        print(a)
         zahlen.append(i)
 
 setzahlen = set(zahlen)
