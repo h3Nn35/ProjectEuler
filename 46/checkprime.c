@@ -1,6 +1,6 @@
 // Datei muss kompiliert werden mit >> gcc -fPIC -shared -o checkprime.so checkprime.c
-#include <stdlib.h>
-#include <stdio.h>
+//#include <stdlib.h>
+//#include <stdio.h>
 #include <math.h>
 
 int istPrimzahl(int zahl);

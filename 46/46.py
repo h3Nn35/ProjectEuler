@@ -6,7 +6,6 @@ ende = False
 
 primzahlen = []
 primzahlen.append(2)
-primzahlen.append(3)
 
 for i in range(3, 1000000, 2):
     if eigen.istPrimzahl(i) == 1:
